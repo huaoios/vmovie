@@ -1,0 +1,66 @@
+/*-------首页-------*/
+
+ion-slide img{
+    width: 100%;
+}
+
+.slider-pager {
+    bottom: 12px;
+}
+
+.slider-pager .slider-pager-page {
+    width: 30px;
+    font-size: 12px;
+}
+
+.r-a .row{
+    text-align: center;
+    font-size: 16px;
+}
+
+.r-1{
+    padding-top: 25px;
+}
+
+.row i{
+    font-size: 30px;
+}
+
+.r-1{
+    height: 140px;
+}
+
+.r-2{
+    height: 70px;
+}
+
+
+
+/*-------首页 结束-------*/
+
+/*-------热点-------*/
+
+ion-scroll{
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+.sub_header_list{
+    width: 160%;
+}
+
+.sub_header_list .button {
+    color: #000;
+}
+
+.bar .sub_header_list .selected_button {
+    border-bottom: 2px solid #387ef5;
+    border-bottom-left-radius: 0px;
+}
+
+/*热点详情*/
+.hot-content img{
+    max-width: 90%;
+}
+
+/*-------热点 结束-------*/

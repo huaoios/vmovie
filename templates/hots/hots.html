@@ -1,0 +1,31 @@
+<ion-view view-title="热点">
+    <ion-header-bar class="bar-subheader">
+        <ion-scroll direction="x" scrollbar-x="false">
+            <div class="button-bar sub_header_list">
+                <a class="button button-clear selected_button" ng-click="selectTitle(0, 20)">教程</a>
+                <a class="button button-clear" ng-click="selectTitle(1, 28)">资讯</a>
+                <a class="button button-clear" ng-click="selectTitle(2, 15)">杂谈</a>
+                <a class="button button-clear" ng-click="selectTitle(3, 25)">互联网</a>
+                <a class="button button-clear" ng-click="selectTitle(4, 20)">财经</a>
+                <a class="button button-clear" ng-click="selectTitle(5, 20)">体育</a>
+                <a class="button button-clear" ng-click="selectTitle(6, 20)">生活</a>
+            </div>
+        </ion-scroll>
+    </ion-header-bar>
+    <ion-content>
+
+        <ion-refresher on-refresh="onRefresh()"></ion-refresher>
+
+        <ion-list>
+            <ion-item class="item-thumbnail-left" collection-repeat="hot in hotDataList"
+                      href="#/tab/hotDetail/{{hot.aid}}"
+            >
+                <!--ng-if: 当里面的表达式的值为真, 则将元素插入DOM, 否则不插入-->
+                <img ng-if="hot.pic" ng-src="{{imgurl}}{{hot.pic}}">
+                <img ng-if="!hot.pic" ng-src="img/ionic.png">
+                {{ hot.title }}
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

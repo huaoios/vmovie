@@ -1,0 +1,12 @@
+<ion-view view-title="文章详情">
+
+    <ion-content>
+
+        <div ng-if="showloading" style="text-align: center">
+            <ion-spinner></ion-spinner>
+        </div>
+        <div class="hot-content" ng-if="!showloading" ng-bind-html="hotDetailData"></div>
+
+    </ion-content>
+
+</ion-view>
