@@ -6,8 +6,10 @@ var arr = [{a: ['a1', 'a2', {}]}, {b: ['b1', 'b2']}]
 
 var obj = {}
 obj.name = 'jack'
-obj.age = 12
-obj.workage = 10
+obj.age = 123
+obj.workage = 10；
+
+
 
 function test(o) {
     var j = {};
